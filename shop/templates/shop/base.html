@@ -38,17 +38,15 @@
                   <li><a class="dropdown-item" href="#">Panner</a></li>
                   <li><a class="dropdown-item" href="#">Cheese</a></li>
                   <li><a class="dropdown-item" href="#">Ice-creams</a></li>
-
-
-
-                                  </ul>
+               </ul>
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link text-white" href="#">About us</a>
               </li>
               
               <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                <a class="nav-link text-white" href="#">Contact Us</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -56,12 +54,44 @@
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
           </div>
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown mx-2">
+              <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                kalyani
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Orders</a></li>
+                <li><a class="dropdown-item" href="#">Change Password</a></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+
+              </ul>
+           </li>
+           <li class="nav-item mx-2">
+            <a href="#" class="nav-link text-white">Cart</a>
+           </li>
+           <li class="nav-item mx-2">
+            <a href="#" class="nav-link text-white">Wishlist</a>
+           </li>
+           <li class="nav-item mx-2">
+            <a href="#" class="nav-link text-white">Login</a>
+           </li>
+           <li class="nav-item mx-2">
+            <a href="#" class="nav-link text-white">Registration</a>
+           </li>
+          </ul>
         </div>
       </nav>
 
+      {% block banner-slider %} {% endblock banner-slider %}
+
       {% block main-content %} {% endblock main-content %}
 
-      <footer>
+      <br>
+      <br>
+
+      <footer class="container-fluid bg-success text-center fixed-bottom p-2 mt-5">
         Copyright: 2024 || kalyani kommula
       </footer>
       
