@@ -10,4 +10,8 @@ class categoryView(View):
     def get(self, request, val):
         product = Product.objects.filter(category=val)
         title = Product.objects.filter(category=val).values('title')
-        return render(request, "shop/category.html", locals())    
+        return render(request, "shop/category.html", locals())   
+
+class ProductDetail(View):
+    def get(self, request, pk):
+        return render(request, "shop/productdetail.html", locals())         
