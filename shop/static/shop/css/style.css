@@ -26,3 +26,15 @@
 .godnesssec a {
   text-decoration: none;
 }
+
+.btn-signup
+ {
+    background-color: #188181;
+    color: #fff;
+}
+
+.btn-signup:hover,
+.btn-signup:active {
+    background-color: #fff;
+    color: #23BBBB;
+}
