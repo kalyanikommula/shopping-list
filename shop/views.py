@@ -31,4 +31,14 @@ class ProductDetail(View):
     def get(self, request, pk):
         product = Product.objects.get(pk=pk)
 
-        return render(request, "shop/productdetail.html", locals())         
+        return render(request, "shop/productdetail.html", locals()) 
+
+
+class ProfileView(View):
+    def get(self, request):
+        return render(request, "shop/profile.html", locals()) 
+
+    def post(self, request):
+        return render(request, "shop/profile.html", locals()) 
+
+   
