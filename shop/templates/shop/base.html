@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -65,7 +66,6 @@
                 <li><a class="dropdown-item" href="#">Profile</a></li>
                 <li><a class="dropdown-item" href="#">Orders</a></li>
                 <li><a class="dropdown-item" href="#">Change Password</a></li>
-                <li><a class="dropdown-item" href="#">Logout</a></li>
 
               </ul>
            </li>
@@ -75,12 +75,22 @@
            <li class="nav-item mx-2">
             <a href="#" class="nav-link text-white">Wishlist</a>
            </li>
+           {% if user.is_authenticated %}
            <li class="nav-item mx-2">
-            <a href="#" class="nav-link text-white">Login</a>
+            <a href="{% url 'account_logout' %}" class="nav-link text-white">Logout</a>
+          </li>
+
+          {% else %}
+          <li class="nav-item mx-2">
+            <a href="{% url 'account_login' %}" class="nav-link text-white">Login</a>
            </li>
            <li class="nav-item mx-2">
-            <a href="#" class="nav-link text-white">Registration</a>
+            <a href="{% url 'account_signup' %}" class="nav-link text-white">Registration</a>
            </li>
+           {% endif %}
+
+
+           
           </ul>
         </div>
       </nav>
