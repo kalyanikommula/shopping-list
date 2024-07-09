@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.views import View
-from . models import Product
+from django.contrib import messages
+from . models import Product, Customer
+from . forms import CustomerProfileForm
 
 # Create your views here.
 def home(request):
@@ -36,9 +38,26 @@ class ProductDetail(View):
 
 class ProfileView(View):
     def get(self, request):
+        form = CustomerProfileForm()
         return render(request, "shop/profile.html", locals()) 
-
+        
     def post(self, request):
+        form = CustomerProfileForm(request.POST)
+        if form.is_valid():
+            user = request.user
+            name = form.cleaned_data['name']
+            locality = form.cleaned_data['locality']
+            city = form.cleaned_data['city']
+            mobile = form.cleaned_data['mobile']
+            county = form.cleaned_data['county']
+            postcode = form.cleaned_data['postcode']
+
+            reg = Customer(user=user,locality=locality,city=city,mobile=mobile,county=county,postcode=postcode)
+            reg.save
+            messages.success(request, "congradulations!! profile save successfully")
+        else:
+            messages.warning(request, "Invalid! input data")    
+
         return render(request, "shop/profile.html", locals()) 
 
    
