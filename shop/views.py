@@ -1,3 +1,4 @@
+from django.db.models import Count
 from django.shortcuts import render
 from django.views import View
 from django.contrib import messages
@@ -37,11 +38,11 @@ class ProductDetail(View):
 
 
 class ProfileView(View):
-    def get(self, request):
+    def get(self,request):
         form = CustomerProfileForm()
         return render(request, "shop/profile.html", locals()) 
         
-    def post(self, request):
+    def post(self,request):
         form = CustomerProfileForm(request.POST)
         if form.is_valid():
             user = request.user
@@ -53,7 +54,7 @@ class ProfileView(View):
             postcode = form.cleaned_data['postcode']
 
             reg = Customer(user=user,locality=locality,city=city,mobile=mobile,county=county,postcode=postcode)
-            reg.save
+            reg.save()
             messages.success(request, "congradulations!! profile save successfully")
         else:
             messages.warning(request, "Invalid! input data")    
@@ -61,3 +62,14 @@ class ProfileView(View):
         return render(request, "shop/profile.html", locals()) 
 
    
+def address(request):
+    add = Customer.objects.filter(user=request.user)
+    return render(request, "shop/address.html", locals())
+
+class updateAddress(View):
+    def get(self,request,pk):
+        form = CustomerProfileForm()
+        return render(request, "shop/updateAddress.html", locals())   
+    def post(self,request,pk):
+        form = CustomerProfileForm(request.POST)
+        return render(request, "shop/updateAddress.html", locals())
