@@ -21,19 +21,19 @@
             <div class="col-12 mt-3">
                 <button type="submit" class="btn btn-success right">Submit</button>
             </div>
-        {% if form.non_field_errors %}
+            {% if form.non_field_errors %}
             {% for error in form.non_field_errors %}
-            <p class="alert alert-danger my-3">{{error}}</p>
+                <p class="alert alert-danger my-3">{{error}}</p>
             {% endfor %}
-        {% endif %}
+            {% endif %}
 
-        {% if messages %}
-           {% for msg in messages %}
+            {% if messages %}
+            {% for msg in messages %}
            <div class="alert alert-{{msg.tags}}" role="alert">
                {{msg}}
            </div>
            {% endfor %}
-        {% endif %}   
+           {% endif %}   
         </form>
     </div>
 </div>

@@ -1,5 +1,5 @@
 from django.db.models import Count
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views import View
 from django.contrib import messages
 from . models import Product, Customer
@@ -53,7 +53,7 @@ class ProfileView(View):
             county = form.cleaned_data['county']
             postcode = form.cleaned_data['postcode']
 
-            reg = Customer(user=user,locality=locality,city=city,mobile=mobile,county=county,postcode=postcode)
+            reg = Customer(user=user,name=name,locality=locality,city=city,mobile=mobile,county=county,postcode=postcode)
             reg.save()
             messages.success(request, "congradulations!! profile save successfully")
         else:
@@ -68,8 +68,23 @@ def address(request):
 
 class updateAddress(View):
     def get(self,request,pk):
-        form = CustomerProfileForm()
+        add = Customer.objects.get(pk=pk)
+        form = CustomerProfileForm(instance=add)
         return render(request, "shop/updateAddress.html", locals())   
     def post(self,request,pk):
         form = CustomerProfileForm(request.POST)
+        if form.is_valid():
+            add = Customer.objects.get(pk=pk)
+            add.name = form.cleaned_data['name']
+            add.locality = form.cleaned_data['locality']
+            add.city = form.cleaned_data['city']
+            add.mobile = form.cleaned_data['mobile']
+            add.county = form.cleaned_data['county']
+            add.postcode = form.cleaned_data['postcode']
+            add.save()
+            messages.success(request, "congratulations! profile update successfully")
+        else:
+            messages.warning(request, "Invalid input data") 
+        return redirect("address")      
+
         return render(request, "shop/updateAddress.html", locals())
