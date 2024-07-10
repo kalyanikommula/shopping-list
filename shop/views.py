@@ -88,3 +88,15 @@ class updateAddress(View):
         return redirect("address")      
 
         return render(request, "shop/updateAddress.html", locals())
+
+def add_to_cart(request):
+    user = request.user
+    product_id = request.GET.get("prod_id")
+    product = Product.objects.get(id=product_id)
+    cart(user=user,product=product).save()
+    return redirect("/cart")
+ 
+def show_cart(request):
+    user = request.user
+    cart = Cart.objects.filter(user=user) 
+    return render(request, "shop/addtocart.html", locals())
