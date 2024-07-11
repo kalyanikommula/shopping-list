@@ -63,3 +63,10 @@ class Cart(models.Model):
     def total_cost(self):
         return self.quantity * self.product_discounted_price
 
+
+class Contact(models.Model):
+    name = models.CharField(max_length=200)
+    email = models.EmailField()
+    message = models.TextField()
+    def __str__(self):
+        return self.name

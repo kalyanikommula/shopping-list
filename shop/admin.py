@@ -1,5 +1,5 @@
 from django.contrib import admin
-from . models import Product, Customer, Cart
+from . models import Product, Customer, Cart,Contact
 
 # Register your models here.
 @admin.register(Product)
@@ -13,3 +13,5 @@ class CustomerModelAdmin(admin.ModelAdmin):
 @admin.register(Cart)
 class CartModelAdmin(admin.ModelAdmin):
     list_display = ['id', 'user', 'product', 'quantity']
+
+admin.site.register(Contact)    

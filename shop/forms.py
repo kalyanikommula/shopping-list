@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from . models import Customer
 
 
+
 class CustomerProfileForm(forms.ModelForm):
     class Meta:
         model = Customer
@@ -15,4 +16,3 @@ class CustomerProfileForm(forms.ModelForm):
             'county':forms.Select(attrs={'class': 'form-control'}),
             'postcode':forms.TextInput(attrs={'class': 'form-control'}),
         }
-    

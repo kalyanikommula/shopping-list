@@ -1,11 +1,15 @@
+from django.http import HttpRequest, HttpResponse
+from django.urls import reverse
 from django.db.models import Count
 from django.db.models import Q
 from django.http import JsonResponse
 from django.shortcuts import render, redirect
 from django.views import View
 from django.contrib import messages
-from . models import Product, Customer, Cart
+from . models import Product, Customer, Cart, Contact
 from . forms import CustomerProfileForm
+
+
 
 # Create your views here.
 def home(request):
@@ -15,7 +19,22 @@ def about(request):
     return render(request, "shop/about.html")
 
 def contact(request):
+    if request.method=="POST":
+        contact=Contact()
+        name=request.POST.get('name')
+        email=request.POST.get('email')
+        message=request.POST.get('message')
+        contact.name=name
+        contact.email=email
+        contact.message=message
+        contact.save()
+        return redirect("success")
+       # return HttpResponse("<h3>Thank you for contact us</h3>")
     return render(request, "shop/contact.html")
+
+
+def success(request):
+    return render(request, "shop/success.html")
 
 
 class categoryView(View):
@@ -168,8 +187,16 @@ def remove_cart(request):
         }   
         return JsonResponse(data) 
 
+def placeorder(request):
+    return render(request, "shop/placeorder.html")
+
+
 
 def search(request):
     query = request.GET.get('search', '')
-    product = Product.objects.filter(Q(title__icontains=query))
+    print(f"Search query: {query}")  # Debugging: Print the search query
+
+    product = Product.objects.filter(Q(title__icontains=query) | Q(category__icontains=query))
     return render(request,"shop/search.html", locals())
+
+
