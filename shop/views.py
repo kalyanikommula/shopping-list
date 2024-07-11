@@ -167,3 +167,9 @@ def remove_cart(request):
             'totalamount':totalamount
         }   
         return JsonResponse(data) 
+
+
+def search(request):
+    query = request.GET.get('search', '')
+    product = Product.objects.filter(Q(title__icontains=query))
+    return render(request,"shop/search.html", locals())

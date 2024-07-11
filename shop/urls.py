@@ -19,6 +19,7 @@ urlpatterns = [
     path('pluscart/', views.plus_cart),
     path('minuscart/', views.minus_cart),
     path('removecart/', views.remove_cart),
+    path('search/', views.search, name='search'),
 
 
 
