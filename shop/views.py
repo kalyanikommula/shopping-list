@@ -58,7 +58,7 @@ class ProductDetail(View):
         product = Product.objects.get(pk=pk)
 
         return render(request, "shop/productdetail.html", locals()) 
-        
+
 @method_decorator(login_required, name='dispatch')
 class ProfileView(View):
     def get(self,request):
@@ -111,6 +111,14 @@ class updateAddress(View):
         return redirect("address")      
 
         return render(request, "shop/updateAddress.html", locals())
+
+class deleteAddress(View):
+    def get(self,request,pk):
+        add = Customer.objects.get(pk=pk)
+        add.delete()
+        messages.success(request, "Address deleted successfully.")
+        return redirect("address")        
+
 @login_required
 def add_to_cart(request):
     user = request.user
