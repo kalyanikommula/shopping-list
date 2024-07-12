@@ -149,9 +149,8 @@ The technologies implemented in this application included HTML5, CSS, Bootstrap,
 * Google and Stack Overflow utilized for general research or solving a bug, information gathering, and various online tools.
 
 
-# Technologies Used
 
-## Languages 
+## Languages used 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
 - [CSS3](https://en.wikipedia.org/wiki/CSS)
 - [Python](https://www.python.org/)
