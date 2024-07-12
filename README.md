@@ -1,4 +1,4 @@
-# Shopping-list
+<h1 align="center">Shopping list</h1>
 
 # Purpose and Target Audience:
 **Problem Statement:**
@@ -9,6 +9,21 @@
 
 # Persona and User Stories:
 ## User Stories:
+* As a new user, I want to create an account so that I can start adding items to my shopping list.
+
+* As a registered user, I want to log in to access my personal shopping lists.
+
+* As a logged-in user, I want to add items to my shopping list so that I don't forget anything when I go shopping.
+
+* As a logged-in user, I want to view all items in my shopping list so that I can see everything I need to buy.
+
+* As a logged-in user, I want to search items as what I am looking for
+
+* As a logged-in user, I want to edit or delete items from my shopping list so that I can manage it effectively.
+
+* As a user I can create profile to save my address in the the app
+
+* As a *user I can see the product images so that **it is easily identity the what product I choose **
 
 ## Wireframe & Initial Design:
 ### Home Page
