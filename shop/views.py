@@ -1,4 +1,6 @@
 from django.http import HttpRequest, HttpResponse
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
 from django.urls import reverse
 from django.db.models import Count
 from django.db.models import Q
@@ -56,8 +58,8 @@ class ProductDetail(View):
         product = Product.objects.get(pk=pk)
 
         return render(request, "shop/productdetail.html", locals()) 
-
-
+        
+@method_decorator(login_required, name='dispatch')
 class ProfileView(View):
     def get(self,request):
         form = CustomerProfileForm()
@@ -82,7 +84,7 @@ class ProfileView(View):
 
         return render(request, "shop/profile.html", locals()) 
 
-   
+@login_required   
 def address(request):
     add = Customer.objects.filter(user=request.user)
     return render(request, "shop/address.html", locals())
@@ -109,14 +111,15 @@ class updateAddress(View):
         return redirect("address")      
 
         return render(request, "shop/updateAddress.html", locals())
-
+@login_required
 def add_to_cart(request):
     user = request.user
     product_id = request.GET.get("prod_id")
     product = Product.objects.get(id=product_id)
     Cart(user=user,product=product).save()
     return redirect("/cart")
- 
+
+@login_required
 def show_cart(request):
     user = request.user
     cart = Cart.objects.filter(user=user) 
