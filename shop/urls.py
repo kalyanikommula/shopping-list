@@ -24,9 +24,6 @@ urlpatterns = [
     path('removecart/', views.remove_cart),
     path('placeorder/', views.placeorder, name='placeorder'),
     path('search/', views.search, name='search'),
+ 
 
-
-
-
-
-]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
