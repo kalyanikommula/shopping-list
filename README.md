@@ -31,8 +31,11 @@
 ### Contact Page
 ### search Page
 
-
 ## Agile:
+This project was created using Agile principles via a projectboard on Github. This is the first time I have implemented Agile as an individual developer. However, creating user stories and identifying accepterance criteria acted as a roadmap to target the various features and functionalities of the application. It helped me stay on track and reduced distractions.
+
+![project board]()
+
 
 # Design Choices:
 
