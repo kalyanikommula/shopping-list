@@ -56,17 +56,19 @@
               <button class="btn btn-outline-dark" type="submit">Search</button>
             </form>
           </div>
-
+          
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            {% if user.is_authenticated %}
             <li class="nav-item dropdown mx-2">
               <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                More
+                Hi {{user.username}}
               </a>
               <ul class="dropdown-menu" aria-labelledby="profileDropdown">
                 <li><a class="dropdown-item" href="{% url 'profile' %}">Profile</a></li>
-
+                
               </ul>
            </li>
+           {% endif %}
            <li class="nav-item mx-2">
             <a href="{% url 'showcart' %}" class="nav-link text-white">Cart</a>
            </li>
