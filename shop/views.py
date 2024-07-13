@@ -117,7 +117,7 @@ class deleteAddress(View):
         add = Customer.objects.get(pk=pk)
         add.delete()
         messages.success(request, "Address deleted successfully.")
-        return redirect("address")        
+        return redirect("profile")
 
 @login_required
 def add_to_cart(request):
