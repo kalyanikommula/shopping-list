@@ -49,10 +49,18 @@ $('.remove-cart').click(function(){
         data:{
             prod_id:id
         },
-        success:function(data){
+        success: function(data){
+            console.log(data)
             document.getElementById("amount").innerText=data.amount
             document.getElementById("totalamount").innerText=data.totalamount
-            eml.parentNode.parentNode.parentNode.parentNode.remove()
+        // eml.parentNode.parentNode.parentNode.parentNode.remove()
+        $('.remove').each(function() {
+            if ($(this).find('.remove-cart').data('pid') === id) {
+                $(this).remove();
+            }
+        });
+
+            
 
         }
     })
