@@ -31,7 +31,6 @@ def contact(request):
         contact.message=message
         contact.save()
         return redirect("success")
-       # return HttpResponse("<h3>Thank you for contact us</h3>")
     return render(request, "shop/contact.html")
 
 
