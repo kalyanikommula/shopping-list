@@ -182,13 +182,8 @@ def minus_cart(request):
 def remove_cart(request):
     if request.method == 'GET':
         prod_id = request.GET.get('prod_id')
-        try:
-           c = Cart.objects.get(Q(product=prod_id) & Q(user=request.user))
-           c.delete()
-        except Cart.DoesNotExist:
-            # Return a JSON response indicating the item was not found
-            return JsonResponse({'error': 'Item not found in cart.'}, status=404)
-   
+        c = Cart.objects.get(Q(product=prod_id) & Q(user=request.user))
+        c.delete()
         user = request.user
         cart = Cart.objects.filter(user=user)
         amount = 0

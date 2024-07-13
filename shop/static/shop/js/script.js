@@ -53,12 +53,8 @@ $('.remove-cart').click(function(){
             console.log(data)
             document.getElementById("amount").innerText=data.amount
             document.getElementById("totalamount").innerText=data.totalamount
-        // eml.parentNode.parentNode.parentNode.parentNode.remove()
-        $('.remove').each(function() {
-            if ($(this).find('.remove-cart').data('pid') === id) {
-                $(this).remove();
-            }
-        });
+            eml.parentNode.parentNode.parentNode.parentNode.remove()
+
 
             
 
