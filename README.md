@@ -9,21 +9,16 @@
 
 # Persona and User Stories:
 ## User Stories:
+* As a user I can easily navigate through the site so that I can view desired content.
 * As a new user, I want to create an account so that I can start adding items to my shopping list.
+* As a *user I can see the product images so that **it is easily identity the what product I choose 
+* As a user I can login/logout off my account if I wish so that I can connect or disconnect from the website
 
-* As a registered user, I want to log in to access my personal shopping lists.
+* As a user I can easily see if I'm logged-in or logged-out so that I can be sure what my status is
 
-* As a logged-in user, I want to add items to my shopping list so that I don't forget anything when I go shopping.
+* As a logged-in user I can add my address so it is easy for the next time when user logged in
 
-* As a logged-in user, I want to view all items in my shopping list so that I can see everything I need to buy.
-
-* As a logged-in user, I want to search items as what I am looking for
-
-* As a logged-in user, I want to edit or delete items from my shopping list so that I can manage it effectively.
-
-* As a user I can create profile to save my address in the the app
-
-* As a *user I can see the product images so that **it is easily identity the what product I choose **
+* As a user I can search the desirable products by keyword so that I can easily find the products for shopping.
 
 ## Wireframe & Initial Design:
 ### Home Page
@@ -34,21 +29,111 @@
 ## Agile:
 This project was created using Agile principles via a projectboard on Github. This is the first time I have implemented Agile as an individual developer. However, creating user stories and identifying accepterance criteria acted as a roadmap to target the various features and functionalities of the application. It helped me stay on track and reduced distractions.
 
-![project board]()
+<p align="center">
+<img src="assets/project-board.png" width="100%" height="100%">
+</p>
+
 
 
 # Design Choices:
 
-## Colour scheme:
 ## Priority Features:
 ### Home page
+*Navigation bar:* 
+- The navigation bar appears on every page so users can easily navigate through the site
+- Navigation bar has links for 'Home', 'products', 'About', 'contact' and 'Login/Register' more links will be shown to logged in users
+- If the user is logged in then the right side of the menu shows links for pages that only authorized users can visit and use, they are: 'profile', 'cart' and  'Logout'. Otherwise, the user will be given the option to 'Register' or 'Login'
+- The user name will also appear on the bar, indicating which user is logged in
+- A search bar is nested in the navbar to find recipes quickly
+- The navbar is fully responsive, collapsing into a hamburger menu for medium and small screen size
+
+<p align="center">
+<img src="assets/navbar.png" width="100%" height="100%">
+</p>
+
+*Home page:*
+<p align="center">
+<img src="assets/home.png" width="100%" height="100%">
+</p>
+
+*Footer:*
+- Appears on every page snd contains social links
+- Links are opened in a new tab to avoid dragging users from our site
+<p align="center">
+<img src="assets/footer.png" width="100%" height="100%">
+</p>
+
 ### Product page
+- product page have dropdown options like 'Milk', 'Butter', 'yogurt/curd', 'Ghee','panner','cheese','Milkshake', 'icecreams'.
+- when user click the dropdown options its showing the details of the product
+<p align="center">
+<img src="assets/product.png" width="100%" height="100%">
+</p>
+
+
 ### About us page
+<p align="center">
+<img src="assets/about.png" width="100%" height="100%">
+</p>
+
 ### Contact us page
+<p align="center">
+<img src="assets/contact.png" width="100%" height="100%">
+</p>
+
 ### search page
+- user search the desired product by keyword.
+- using search bar user can easily identify the products.
+<p align="center">
+<img src="assets/search.png" width="100%" height="100%">
+</p>
+
 ### cart page
+- only Logged in user can see cart page.
+- user can increase/decrease the quantity of their products.
+- user can see the total amount of selected products.
+<p align="center">
+<img src="assets/cart.png" width="100%" height="100%">
+</p>
+
+### Profile page
+
+#### Profile
+- user can see the profile page after user Loggedin. 
+<p align="center">
+<img src="assets/profile.png" width="100%" height="100%">
+</p>
+
+#### Address page
+<p align="center">
+<img src="assets/address.png" width="100%" height="100%">
+</p>
+
+** updateaddress page **:
+<p align="center">
+<img src="assets/update.png" width="100%" height="100%">
+</p>
+
+### Login/Register page
+- The Login / Register button takes users to the login page where they can also find a link to the Register page where they can create an account
+<p align="center">
+<img src="assets/signin.png" width="100%" height="100%">
+</p>
+
+<p align="center">
+<img src="assets/signup.png" width="100%" height="100%">
+</p>
+
+### Logout page
+
+<p align="center">
+<img src="assets/signout.png" width="100%" height="100%">
+</p>
 
 ## Database design
+<p align="center">
+<img src="assets/database.png" width="900" height="100%">
+</p>
 
 Entity Relationship Diagrams (ERD) help the developer to make connections between databases and information. Creating an ERD helped me understand how the tables relate to one another. I used dbddiagram to create the diagram and the arrow represent how the data fields relate to one another.
 
