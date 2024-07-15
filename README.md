@@ -252,6 +252,12 @@ Laptops:
 
 | Feature | Expected Outcome | Grade | Screenshots |
 | ------- | ---------------- | ----- | --------- |
+| View products | Users can see available products which have been added to the cart| Pass | ![view products](assets/product.png)
+| search | As a User I can search the desirable product by keyword so that I can find the product I want faster | Pass | ![search products](assets/search.png)
+| Profile | As a User I want to save my profile | Pass | ![testing profile](assets/profile.png)
+| update-Profile | As a User I want to update my profile | Pass | ![testing profile](assets/add-profile.png)
+| delete-Profile | As a User I want to remove my profile | Pass | ![testing profile](assets/add-del.png)
+| Admin has access to  functionality  | Admin can  delete the customer database | Pass | ![admin testing](assets/add-update.png)
 | Registration | New users can access a registration form from the "Register" link | Pass | ![testing sign up](assets/signup.png)
 | Log in | Users can log in using a form after clicking "Log in" | Pass | ![sign in testing ](assets/signin.png)
 | Log out | Users get logged out after clicking "Log out" | Pass | ![testing sign out](assets/signout.png)
