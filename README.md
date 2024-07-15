@@ -198,7 +198,7 @@ Entity Relationship Diagrams (ERD) help the developer to make connections betwee
  I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate my CSS file.
 | File | Screenshot | Notes |
 | --- |--- | --- |
-| style.css | | ![validate css](assets/css-testing/css.png) | Pass: No Errors |
+| style.css |  ![validate css](assets/css-testing/css.png) | Pass: No Errors |
 
 ## Javascript
 | File | Screenshot | Notes |
@@ -208,8 +208,8 @@ Entity Relationship Diagrams (ERD) help the developer to make connections betwee
 
 I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
 
-| File | CI URL | Screenshot | Notes |
-| --- | --- | --- | --- |
+| File  Screenshot | Notes |
+| ---| --- | --- |
 | forms.py  | ![screenshot]![forms py](assets/python-testing/form.png)
  | Pass: No Errors |
 | settings.py  | ![screenshot]![settings py](assets/python-testing/settings.png)
