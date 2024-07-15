@@ -1,63 +1,53 @@
+const plusCartButtons = document.querySelectorAll('.plus-cart');
+const minusCartButtons = document.querySelectorAll('.minus-cart');
+const removeCartButtons = document.querySelectorAll('.remove-cart');
 
- $('.plus-cart').click(function(){
-    var id=$(this).attr("pid").toString();
-    var eml = this.parentNode.children[2]
-    console.log("pid =",id)
-    $.ajax({
-        type:"GET",
-        url:"/pluscart",
-        data:{
-            prod_id:id
+// Function to handle click events for adding items to cart
+function addToCart(id) {
+    fetch('/pluscart', {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
         },
-        success: function(data){
-            console.log("data = ",data)
-            eml.innerText=data.quantity
-            document.getElementById("amount").innerText=data.amount
-            document.getElementById("totalamount").innerText=data.totalamount
-
-        }
+        body: JSON.stringify({ prod_id: id }),
     })
-})
+    .then(response => response.json())
+    .then(data => {
+        console.log("data = ", data);
+        const eml = document.querySelector(`.plus-cart[data-pid="${id}"] + * + * + *`);
+        eml.textContent = data.quantity;
+        document.getElementById("amount").textContent = data.amount;
+        document.getElementById("totalamount").textContent = data.totalamount;
+    });
+}
 
-$('.minus-cart').click(function(){
-    var id=$(this).attr("pid").toString();
-    var eml = this.parentNode.children[2]
-    console.log("pid =",id)
-    $.ajax({
-        type:"GET",
-        url:"/minuscart",
-        data:{
-            prod_id:id
+// Function to handle click events for removing items from cart
+function removeFromCart(id) {
+    fetch('/removecart', {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
         },
-        success: function(data){
-            console.log("data = ",data)
-            eml.innerText=data.quantity
-            document.getElementById("amount").innerText=data.amount
-            document.getElementById("totalamount").innerText=data.totalamount
-
-        }
+        body: JSON.stringify({ prod_id: id }),
     })
-})
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        document.getElementById("amount").textContent = data.amount;
+        document.getElementById("totalamount").textContent = data.totalamount;
+        const emlParent = document.querySelector(`.remove-cart[data-pid="${id}"] + * + * + *`);
+        emlParent.parentNode.parentNode.parentNode.parentNode.remove();
+    });
+}
 
-$('.remove-cart').click(function(){
-    var id=$(this).attr("pid").toString();
-    var eml = this.parentNode.children[2]
-    console.log("pid =",id)
-    $.ajax({
-        type:"GET",
-        url:"/removecart",
-        data:{
-            prod_id:id
-        },
-        success: function(data){
-            console.log(data)
-            document.getElementById("amount").innerText=data.amount
-            document.getElementById("totalamount").innerText=data.totalamount
-            eml.parentNode.parentNode.parentNode.parentNode.remove()
+plusCartButtons.forEach(button => {
+    button.addEventListener('click', () => addToCart(button.getAttribute('data-pid')));
+});
 
+minusCartButtons.forEach(button => {
+    button.addEventListener('click', () => removeFromCart(button.getAttribute('data-pid')));
+});
 
-            
-
-        }
-    })
-})
+removeCartButtons.forEach(button => {
+    button.addEventListener('click', () => removeFromCart(button.getAttribute('data-pid')));
+});

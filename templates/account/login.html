@@ -9,8 +9,16 @@
 
 {% block main-content %}
 
-<div class="container">
-    <div class="row">
+<div class="container mt-3">
+    {% if user.is_authenticated %}
+    <p style="position: fixed; top: 98px; right: 40px;
+    font-size: 20px;">Welcome, {{ user.email }}! You are logged in.</p>
+{% else %}
+    <p style="position: fixed; top: 98px; right: 40px;
+    font-size: 20px;">You are not logged in.</p>
+{% endif %}
+
+    <div class="row mt-3">
         <div class="col-md-8 mt-3 offset-md-2">
             <h3>{% trans "Sign In" %}</h3>
 

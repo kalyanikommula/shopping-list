@@ -201,8 +201,10 @@ Entity Relationship Diagrams (ERD) help the developer to make connections betwee
 | style.css |  ![validate css](assets/css-testing/css.png) | Pass: No Errors |
 
 ## Javascript
+
 | File | Screenshot | Notes |
 | --- |--- | --- |
+| Javascript | ![validation js](assets/js-testing/download.png)|pass: showing some warnings|
 
 ## Python
 
@@ -264,7 +266,7 @@ The technologies implemented in this application included HTML5, CSS, Bootstrap,
 * Heroku used for hosting the deployed back-end site.
 * Whitenoise used for online static file storage.
 * Balsamiq Utilized for collaborative design and prototyping(wireframes).
-
+* Cloudinary used for online static file storage.
 * Google and Stack Overflow utilized for general research or solving a bug, information gathering, and various online tools.
 
 
@@ -296,6 +298,11 @@ The technologies implemented in this application included HTML5, CSS, Bootstrap,
 [Balsamiq](https://balsamiq.com/) - was used to create site wireframes.
 
 # Bugs and Issues
+ It is showing an 'application error' during deployment because I did not include the project name in the Profile folder. Additionally Static files were not being uploaded post-deployment on heroku until I  installed  whitenoise package. However, I faced a similar problem with media files, which was attributed to incorrect syntax in the Cloudinary field configuration.
+
+sometimes when I run the server the system asking install gunicorn package which is already I installed. I get 'keyerror' issue when I write the code for search page because 'search' key does not get in my dictionary to overcome this issue I added empty string in the dictionary and also added search name given to the name attribute where it is need.
+
+'Runtime errors' often occur when necessary modules are not imported, leading to syntax issues.
 
 # Deployment
 This project was deployed using Github and Heroku.
@@ -317,3 +324,10 @@ To create a new repository I took the following steps:
 - [Code Institute](https://codeinstitute.net/ie/) - 'I think therefore I blog' project helped me with shopping app to upload static files
 - [Django documentation](https://docs.djangoproject.com/en/4.0/topics/pagination/) - also helped me with static images and media images
 - [Search bar](https://www.teckiy.com/blog/implementation-of-search-bar-using-django-in-any-website-2936659075/) - this site is used to help me build Search bar
+
+# Media 
+All images are taken from [Google](https://google.com)
+
+# Acknowledgements
+- Thanks to martin and tutor Alan, John for helpuful feedback
+- Thanks to iris for helping me during the project
