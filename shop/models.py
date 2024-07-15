@@ -52,7 +52,7 @@ class Customer(models.Model):
     locality = models.CharField(max_length=200)
     city = models.CharField(max_length=50)
     mobile = models.IntegerField(default=0)
-    postcode = models.CharField()
+    postcode = models.CharField(max_length=200)
     county = models.CharField(choices=COUNTY_CHOICES,max_length=100)
     def __str__(self):
         return self.name

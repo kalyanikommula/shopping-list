@@ -20,11 +20,12 @@
 
 * As a user I can search the desirable products by keyword so that I can easily find the products for shopping.
 
-## Wireframe & Initial Design:
-### Home Page
-### Products Page
-### Contact Page
-### search Page
+# Wireframes
+All wireframes were created used [Balsamiq](https://balsamiq.com/)
+
+Wireframes for each device are linked here:
+- [Desktop](assets/documents/desktop-wireframes)
+- [Mobile](assets/documents/Mobile-wireframes)
 
 ## Agile:
 This project was created using Agile principles via a projectboard on Github. This is the first time I have implemented Agile as an individual developer. However, creating user stories and identifying accepterance criteria acted as a roadmap to target the various features and functionalities of the application. It helped me stay on track and reduced distractions.
