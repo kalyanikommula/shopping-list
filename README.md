@@ -1,5 +1,10 @@
 <h1 align="center">Shopping list</h1>
 
+<p align="center">
+<img src="assets/responsive.png" width="600" height="100%">
+</p>
+
+
 # Purpose and Target Audience:
 **Problem Statement:**
 
