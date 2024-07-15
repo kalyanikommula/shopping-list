@@ -201,7 +201,7 @@ Entity Relationship Diagrams (ERD) help the developer to make connections betwee
 | style.css |  ![validate css](assets/css-testing/css.png) | Pass: No Errors |
 
 ## Javascript
- I have used the recommended [Javascript Jigsaw Validator](https://jshint.com/) to validate my Javascript file.
+ I have used the recommended [Javascript Validator](https://jshint.com/) to validate my Javascript file.
 
 | File | Screenshot | Notes |
 | --- |--- | --- |
