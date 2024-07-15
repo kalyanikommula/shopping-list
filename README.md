@@ -210,16 +210,15 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 | File | Screenshot | Notes |
 | ---| --- | --- |
-| forms.py  | ![screenshot]![forms py](assets/python-testing/form.png)
- | Pass: No Errors |
-| settings.py  | ![screenshot]![settings py](assets/python-testing/settings.png)
- | Pass: No Errors |
-|  views.py |  ![screenshot]![views py](assets/python-testing/views.png)
- | Pass: No Errors |
-|  urls.py |  ![screenshot]![urls py](assets/python-testing/url.png)
- | Pass: No Errors |
-|  models.py |  ![screenshot]![models py](assets/python-testing/model.png)
- | Pass: No Errors |
+| forms.py  | ![screenshot]![forms py](assets/python-testing/form.png) | Pass: No Errors |
+
+| settings.py  | ![screenshot]![settings py](assets/python-testing/settings.png)  | Pass: No Errors |
+|  views.py |  ![screenshot]![views py](assets/python-testing/views.png) | Pass: No Errors |
+
+|  urls.py |  ![screenshot]![urls py](assets/python-testing/url.png)  | Pass: No Errors |
+
+|  models.py |  ![screenshot]![models py](assets/python-testing/model.png)  | Pass: No Errors |
+
 
 # Responsiveness:
 Development tools were used to test responsiveness on varying sized devices including laptop, mobile and tablet size.
