@@ -16,27 +16,21 @@ import dj_database_url
 if os.path.isfile('env.py'):
     import env
 
-
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
-
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 SECRET_KEY = os.environ.get("SECRET_KEY")
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
-
 # SECURITY WARNING: keep the secret key used in production secret!
- # SECRET_KEY = 'django-insecure-nj95gl@uly)lq&7$r%zcvn#&*8@y8$s98^^8&@cas=q1c!x*q5'
+# SECRET_KEY = 'django-insecure-nj95gl@uly)lq&7$r%zcvn#&*8@y8$s98^^8&@cas=q1c!x*q5'  # noqa
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-kalyanikomm-shoppinglis-mphp5jso91l.ws.codeinstitute-ide.net','.herokuapp.com']
+ALLOWED_HOSTS = ['8000-kalyanikomm-shoppinglis-mphp5jso91l.ws.codeinstitute-ide.net', '.herokuapp.com']  # noqa
 
 
 # Application definition
@@ -102,18 +96,17 @@ WSGI_APPLICATION = 'shopping_list.wsgi.application'
 DATABASES = {
    'default': {
        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+       'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
-#DATABASES = {
- #   'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
-#}
+# DATABASES = {
+# 'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+# }
 
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://*.8000-kalyanikomm-shoppinglis-mphp5jso91l.ws.codeinstitute-ide.net",
-    "https://*.herokuapp.com"
+    "https://*.8000-kalyanikomm-shoppinglis-mphp5jso91l.ws.codeinstitute-ide.net", "https://*.herokuapp.com"  # noqa
 ]
 
 # Password validation
@@ -121,16 +114,16 @@ CSRF_TRUSTED_ORIGINS = [
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',  # noqa
     },
 ]
 
@@ -153,11 +146,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'shop/static'), os.path.join(BASE_DIR,'media/product')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'shop/static'), os.path.join(BASE_DIR, 'media/product')]  # noqa
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_URL = '/media/'
-#MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
-#MEDIA_ROOT = BASE_DIR/'media'
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+# MEDIA_ROOT = BASE_DIR/'media'
 MEDIA_ROOT = 'media'
 
 # Default primary key field type
