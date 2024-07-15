@@ -9,7 +9,6 @@ This is a full-stack framework project built using Django, Python, HTML and CSS.
 The live application can be viewed here : 
 https://shopping-list5-316b6309fa96.herokuapp.com/
 
-
 # Purpose and Target Audience:
 **Problem Statement:** Consumers face difficulties in organizing and managing their dairy products shopping lists due to the complexity of choosing from a wide range of products, varying prices, and limited knowledge about nutritional values and storage guidelines. 
 
@@ -181,6 +180,7 @@ Entity Relationship Diagrams (ERD) help the developer to make connections betwee
 
 # Validation
 ## HTML
+ I have used the recommended [HTML Validator](https://validator.w3.org/) to validate my HTML file.
 
 | Page  | Screenshot | Notes |
 | --- | --- | --- |
@@ -201,6 +201,7 @@ Entity Relationship Diagrams (ERD) help the developer to make connections betwee
 | style.css |  ![validate css](assets/css-testing/css.png) | Pass: No Errors |
 
 ## Javascript
+ I have used the recommended [Javascript Jigsaw Validator](https://jshint.com/) to validate my Javascript file.
 
 | File | Screenshot | Notes |
 | --- |--- | --- |
