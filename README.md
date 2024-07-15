@@ -199,7 +199,7 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
  | Pass: No Errors |
 |  urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/checkout/urls.py) | ![screenshot]![urls py](assets/python-testing/url.png)
  | Pass: No Errors |
-|  models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/profiles/models.py) | ![screenshot]![models py](assets/python-testing/model.png)
+|  models.py | [PEP8 CI](https://pep8ci.herokuapp.com/) | ![screenshot]![models py](assets/python-testing/model.png)
  | Pass: No Errors |
 
 # Responsiveness:
