@@ -16,7 +16,9 @@ https://shopping-list5-316b6309fa96.herokuapp.com/
 **Purpose:** The primary aim is to develop a digital platform that simplifies the process of creating and managing dairy products shopping lists for consumers, while simultaneously providing retailers with tools to optimize inventory management and tailor their offerings to consumer preferences.
 
 **Target Audience:**
+
 ***Consumers:*** Individuals looking for an easy and efficient way to organize their dairy products shopping lists, compare prices, and access nutritional information and storage guidelines.
+
 ***Retailers:*** Grocery stores, supermarkets, and dairy product suppliers seeking to improve inventory management, reduce waste, and increase sales by better understanding and catering to consumer preferences.
 
 # Persona and User Stories:
@@ -79,7 +81,7 @@ This project was created using Agile principles via a projectboard on Github. Th
 <img src="assets/product.png" width="100%" height="100%">
 </p>
 <p align="center">
-<img src="assets/product-decription.png.png" width="100%" height="100%">
+<img src="assets/product-decription.png" width="100%" height="100%">
 </p>
 
 ### About us page
