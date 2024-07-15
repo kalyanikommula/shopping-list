@@ -252,6 +252,12 @@ Laptops:
 
 | Feature | Expected Outcome | Grade | Screenshots |
 | ------- | ---------------- | ----- | --------- |
+| Registration | New users can access a registration form from the "Register" link | Pass | ![testing sign up](assets/signup.png)
+| Log in | Users can log in using a form after clicking "Log in" | Pass | ![sign in testing ](assets/signin.png)
+| Log out | Users get logged out after clicking "Log out" | Pass | ![testing sign out](assets/signout.png)
+| Footer | A footer displays social information | Pass | ![footer](assets/footer.png)
+| Social links work | The social links will navigate to a new page when they're clicked. They will open in a new tab | Pass | ![footer](assets/footer.png)
+
 
 # Tools and Technologies Used:
 The technologies implemented in this application included HTML5, CSS, Bootstrap, Python and Django.
