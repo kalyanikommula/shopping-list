@@ -183,7 +183,7 @@ Entity Relationship Diagrams (ERD) help the developer to make connections betwee
 ## HTML
 
 | Page  | Screenshot | Notes |
-| ---  --- | --- |
+| --- | --- | --- |
 | Home |  ![home page validate](assets/html-testng/home.png) | Pass: No errors |
 | Products | ![Validate products page](assets/html-testng/product.png) | Pass: No errors |
 | about|  ![validate about](assets/html-testng/about.png) | Pass: No errors |
