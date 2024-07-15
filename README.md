@@ -4,13 +4,20 @@
 <img src="assets/responsive.png" width="600" height="100%">
 </p>
 
+This is a full-stack framework project built using Django, Python, HTML and CSS. My goal is to create a functioning and responsive website, that allows users to add the dairy products into the cart and create their profile for details. This project has been built for online shopping for daily products.
+
+The live application can be viewed here : 
+https://shopping-list5-316b6309fa96.herokuapp.com/
+
 
 # Purpose and Target Audience:
-**Problem Statement:**
+**Problem Statement:** Consumers face difficulties in organizing and managing their dairy products shopping lists due to the complexity of choosing from a wide range of products, varying prices, and limited knowledge about nutritional values and storage guidelines. 
 
-**Purpose:**
+**Purpose:** The primary aim is to develop a digital platform that simplifies the process of creating and managing dairy products shopping lists for consumers, while simultaneously providing retailers with tools to optimize inventory management and tailor their offerings to consumer preferences.
 
 **Target Audience:**
+***Consumers:*** Individuals looking for an easy and efficient way to organize their dairy products shopping lists, compare prices, and access nutritional information and storage guidelines.
+***Retailers:*** Grocery stores, supermarkets, and dairy product suppliers seeking to improve inventory management, reduce waste, and increase sales by better understanding and catering to consumer preferences.
 
 # Persona and User Stories:
 ## User Stories:
@@ -18,14 +25,11 @@
 * As a new user, I want to create an account so that I can start adding items to my shopping list.
 * As a *user I can see the product images so that **it is easily identity the what product I choose 
 * As a user I can login/logout off my account if I wish so that I can connect or disconnect from the website
-
 * As a user I can easily see if I'm logged-in or logged-out so that I can be sure what my status is
-
 * As a logged-in user I can add my address so it is easy for the next time when user logged in
-
 * As a user I can search the desirable products by keyword so that I can easily find the products for shopping.
 
-# Wireframes
+## Wireframes
 All wireframes were created used [Balsamiq](https://balsamiq.com/)
 
 Wireframes for each device are linked here:
@@ -38,7 +42,6 @@ This project was created using Agile principles via a projectboard on Github. Th
 <p align="center">
 <img src="assets/project-board.png" width="100%" height="100%">
 </p>
-
 
 
 # Design Choices:
@@ -75,7 +78,9 @@ This project was created using Agile principles via a projectboard on Github. Th
 <p align="center">
 <img src="assets/product.png" width="100%" height="100%">
 </p>
-
+<p align="center">
+<img src="assets/product-decription.png.png" width="100%" height="100%">
+</p>
 
 ### About us page
 <p align="center">
@@ -175,20 +180,27 @@ Entity Relationship Diagrams (ERD) help the developer to make connections betwee
 # Validation
 ## HTML
 
-| Page | W3C URL | Screenshot | Notes |
-| --- | --- | --- | --- |
-| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2F) | ![home page validate]() | Pass: |
-| Products | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Fbooks%2Fbooks%2F) | ![Validate Books page]() | P |
-| Profile | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Fbooks%2Fadd_book%2F) | ![validate adda book page]() |  |
-| Sign In| [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Flogin%2F) | ![validate sign in]() |  |
-| Register| [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | ![validate sign up]() |  |
+| Page  | Screenshot | Notes |
+| ---  --- | --- |
+| Home |  ![home page validate](assets/html-testng/home.png) | Pass: No errors |
+| Products | ![Validate products page](assets/html-testng/product.png) | Pass: No errors |
+| about|  ![validate about](assets/html-testng/about.png) | Pass: No errors |
+| contact|  ![validate contact](assets/html-testng/contact.png) | Pass: No errors |
+| search|  ![validate search](assets/html-testng/search.png) |Pass: No errors  |
+| Profile  | ![validate  profile page](assets/html-testng/image.png) | Pass: No errors |
+| Sign In | ![validate sign in](assets/html-testng/login.png) | Pass: No errors |
+| Register|  ![validate sign up](assets/html-testng/signup.png) | errors: some <p>,<ul>not closed |
 
  ## CSS
 
  I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate my CSS file.
-| File | Jigsaw URL | Screenshot | Notes |
-| --- | --- | --- | --- |
-| style.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=enhttps://jigsaw.w3.org/css-validator/validator) | ![validate css](assets/css-testing/css.png) | Pass: No Errors |
+| File | Screenshot | Notes |
+| --- |--- | --- |
+| style.css | | ![validate css](assets/css-testing/css.png) | Pass: No Errors |
+
+## Javascript
+| File | Screenshot | Notes |
+| --- |--- | --- |
 
 ## Python
 
@@ -196,15 +208,15 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/run.py) | ![screenshot]![forms py](assets/python-testing/form.png)
+| forms.py  | ![screenshot]![forms py](assets/python-testing/form.png)
  | Pass: No Errors |
-| settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/boutique-ado/settings.py) | ![screenshot]![settings py](assets/python-testing/settings.png)
+| settings.py  | ![screenshot]![settings py](assets/python-testing/settings.png)
  | Pass: No Errors |
-|  views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/blog/views.py) | ![screenshot]![views py](assets/python-testing/views.png)
+|  views.py |  ![screenshot]![views py](assets/python-testing/views.png)
  | Pass: No Errors |
-|  urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/checkout/urls.py) | ![screenshot]![urls py](assets/python-testing/url.png)
+|  urls.py |  ![screenshot]![urls py](assets/python-testing/url.png)
  | Pass: No Errors |
-|  models.py | [PEP8 CI](https://pep8ci.herokuapp.com/) | ![screenshot]![models py](assets/python-testing/model.png)
+|  models.py |  ![screenshot]![models py](assets/python-testing/model.png)
  | Pass: No Errors |
 
 # Responsiveness:

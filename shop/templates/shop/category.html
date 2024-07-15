@@ -21,7 +21,7 @@
                 <div class="col text-center mb-4">
                     <a href="{% url 'product-detail' prod.id %}" class="btn">
                         <div>
-                            <img src="{{prod.product_image.url}}" width="300px" height="200px">
+                            <img src="{{prod.product_image.url}}" alt="image" width="300" height="200">
                             <div class="fw-bold">{{prod.title}}</div>
                             <div class="fw-bold text-danger">
                                 {{prod.discounted_price}}£
@@ -37,6 +37,6 @@
         </div>
     </div>
 </div>
-<br/><br/>
+<br><br>
 
 {% endblock main-content %}
