@@ -104,8 +104,13 @@ This project was created using Agile principles via a projectboard on Github. Th
 - only Logged in user can see cart page.
 - user can increase/decrease the quantity of their products.
 - user can see the total amount of selected products.
+- If products not added to the cart its is showing 'cart is empty'
 <p align="center">
 <img src="assets/cart.png" width="100%" height="100%">
+</p>
+
+<p align="center">
+<img src="assets/cart-empty.png" width="100%" height="100%">
 </p>
 
 ### Profile page
