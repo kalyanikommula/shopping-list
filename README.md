@@ -142,6 +142,12 @@ This project was created using Agile principles via a projectboard on Github. Th
 <img src="assets/signout.png" width="100%" height="100%">
 </p>
 
+## Future features
+
+- As a logged-in user, I want to edit or delete items from my shopping list so that I can manage it effectively.
+- As a user I can buy the products directly from the product page
+
+
 ## Database design
 <p align="center">
 <img src="assets/database.png" width="900" height="100%">
@@ -178,9 +184,20 @@ Entity Relationship Diagrams (ERD) help the developer to make connections betwee
 | Product |  FK |  |
 | Quantity |  PossitiveIntegerField |  |
 
+# Design 
+## Chosen color
+- #fff - added color to the background for category images on home page.
+- #636362 - for added to the text color on home page images
+- #ffff - added color to social media networks on footer
+
+## Font
+- Times New Roman', Times, serif - for description about product
+
 # Validation
 ## HTML
  I have used the recommended [HTML Validator](https://validator.w3.org/) to validate my HTML file.
+ 
+ Registration form showing some errors becuase thay are form allauth package.
 
 | Page  | Screenshot | Notes |
 | --- | --- | --- |
@@ -191,7 +208,7 @@ Entity Relationship Diagrams (ERD) help the developer to make connections betwee
 | search|  ![validate search](assets/html-testng/search.png) |Pass: No errors  |
 | Profile  | ![validate  profile page](assets/html-testng/image.png) | Pass: No errors |
 | Sign In | ![validate sign in](assets/html-testng/login.png) | Pass: No errors |
-| Register|  ![validate sign up](assets/html-testng/signup.png) | errors: some <p>,<ul>not closed |
+| Register|  ![validate sign up](assets/html-testng/signup.png) |  pass: elements not closed |
 
  ## CSS
 
@@ -205,7 +222,7 @@ Entity Relationship Diagrams (ERD) help the developer to make connections betwee
 
 | File | Screenshot | Notes |
 | --- |--- | --- |
-| Javascript | ![validation js](assets/js-testing/download.png)|pass: showing some warnings|
+| Javascript | ![validation js](assets/js-testing/javascript.png)|pass: showing some warnings|
 
 ## Python
 
