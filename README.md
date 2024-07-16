@@ -213,7 +213,7 @@ Entity Relationship Diagrams (ERD) help the developer to make connections betwee
 | search|  ![validate search](assets/html-testng/search.png) |Pass: No errors  |
 | Profile  | ![validate  profile page](assets/html-testng/image.png) | Pass: No errors |
 | Sign In | ![validate sign in](assets/html-testng/login.png) | Pass: No errors |
-| Register|  ![validate sign up](assets/html-testng/signup.png) |  pass: elements not closed |
+| Register|  ![validate sign up](assets/html-testng/signup.png) |  from allauth showing some errors |
 
  ## CSS
 
@@ -227,7 +227,7 @@ Entity Relationship Diagrams (ERD) help the developer to make connections betwee
 
 | File | Screenshot | Notes |
 | --- |--- | --- |
-| Javascript | ![validation js](assets/js-testing/javascript.png)|pass: showing some warnings|
+| Javascript | ![validation js](assets/js-testing/javascript.png)|pass: No errors|
 
 ## Python
 
