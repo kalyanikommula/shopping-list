@@ -47,6 +47,16 @@ This project was created using Agile principles via a projectboard on Github. Th
 
 # Design Choices:
 
+## Chosen color
+- #fff - added color to the background for category images on home page.
+- #636362 - for added to the text color on home page images
+- #ffff - added color to social media networks on footer
+- Green - used for Header and Footer
+
+## Font
+- Times New Roman', Times, serif - for description about product
+
+
 ## Priority Features:
 ### Home page
 *Navigation bar:* 
@@ -188,15 +198,6 @@ Entity Relationship Diagrams (ERD) help the developer to make connections betwee
 | User | FK |  |
 | Product |  FK |  |
 | Quantity |  PossitiveIntegerField |  |
-
-# Design 
-## Chosen color
-- #fff - added color to the background for category images on home page.
-- #636362 - for added to the text color on home page images
-- #ffff - added color to social media networks on footer
-
-## Font
-- Times New Roman', Times, serif - for description about product
 
 # Validation
 ## HTML
