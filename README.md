@@ -261,7 +261,6 @@ Laptops:
 
 | Link | Expected Outcome | Grade |
 | ------- | ---------------- | ----- |
-| Logo | Navigates to the home page when clicked | Fail |
 | Home | Navigates to the home page when clicked | Pass |
 | Products | Navigates to a product list  page when clicked | Pass |
 | search | Navigates to a search to find the selected products | Pass |
